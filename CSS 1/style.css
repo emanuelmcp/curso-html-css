@@ -1,0 +1,127 @@
+/*
+  Regla CSS consta de 2 partes:
+  1) Selector
+  2) Bloque de declaraciones:
+    La sintaxis es:
+      atributo: valor;
+      atributo-de-mas-de-dos-palabras: otro-valor;
+      Ejemplo:
+        h1{
+          color: orangered;
+          background-color: skyblue;
+        }
+*/
+
+
+/*ESTO ES UNA MUY MALA PRÁCTICA
+@import url(otra-hoja.css);
+
+El navegador se bloquea hasta que no descargue todo el codigo,
+es decir, son bloqueantes
+*/
+
+h1{
+  color: orangered;
+  background-color: skyblue;
+}
+
+/*
+  Selectores básicos:
+  1) Etiquetas - son elementos HTML
+  2) Identificadores - atributo id - #
+  3) Clases - atributo class - .
+*/
+
+
+/*Esto cambia todas las etiquetas html*/
+p{
+  color:midnightblue;
+}
+
+/*Esto cambia los IDs. ES UN ANTIPATRÓN*/
+
+#parrafo-dos{
+  background-color: skyblue;
+}
+
+/*Lo mejor es utilizar clases*/
+
+.bg-skyblue{
+  background-color: skyblue;
+}
+
+.bg-steelblue{
+  background-color: steelblue;
+}
+
+.text-20{
+  font-size: 20px;
+}
+
+.text-32{
+  font-size: 32;
+}
+
+
+
+.text-white{
+  color: white;
+}
+
+/*HIJOS DIRECTOS E HIJOS INDIRECTOS*/
+
+.hijos-directos > li{
+  background-color: thistle;
+}
+
+.hijos-descendientes b{
+  background-color: thistle;
+}
+
+/*Los selectores de hermanos (están en el mismo nivel)
+van a aplicar los estilos a los elementos que son hermanos
+y qu estén por debajo del elemento de referencia*/
+.hermanos-general ~ li{
+  background-color: thistle;
+}
+
+
+.hermanos-adyacentes + li{
+  background-color: thistle;
+}
+
+/*SELECTORES DE ATRIBUTOS*/
+.selectores-atributos a[href]{
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"]{
+  font-weight: bold;
+}
+
+/*Todos los enlaces que contengan el texto jonmircha*/
+.selectores-atributos a[href*="jonmircha"]{
+  font-size: 24px;
+}
+
+/*Todos los enlaces que comiencen por la palabra http:*/
+.selectores-atributos a[href^="http:"]{
+  text-decoration: none;
+}
+
+
+/*Todos los enlaces que comiencen por la palabra http:*/
+.selectores-atributos a[href$=".com"]{
+  background-color: black;
+}
+
+/*Aplica el estilo si contiene el texto en cuestión en una lista separada por espacios*/
+.selectores-atributos a[class~="cursos"]{
+  background-color: midnightblue;
+}
+
+/*Aplica el estilo si contiene el texto en cuestión en una lista separada por espacios
+y que después del texto en cuestón venga un guión medio*/
+.selectores-atributos a[class|="menu"]{
+  font-style: italic;
+}

@@ -1,27 +1,125 @@
 <!--TEMA 1-->
 
 <!--ESTRUCTURA BASICA HTML-->
-
 <!DOCTYPE html>
 <!-- El atributo LANG define el idima a la web de cara al navegador -->
 <html lang="en">
-    <!-- La etiqueta HEAD es la que nos da la posibilidad de enlazar
-        otros archivos como hojas de estilo, scripts de JavaScript, etc...
-        Toda esta información se consideran metadatos, porque ofrece
-        información a los navegadores sin alterar el aspecto visual de la 
-        web
-    -->
+	<!-- La etiqueta HEAD es la que nos da la posibilidad de enlazar
+		otros archivos como hojas de estilo, scripts de JavaScript, etc...
+		Toda esta información se consideran metadatos, porque ofrece
+		información a los navegadores sin alterar el aspecto visual de la 
+		web
+	-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-    <!-- Todo los relacionado con el aspecto visual de la web va dentro de
-    la etiqueta body -->
+	<!--El atributo meta cahrset permite soportar caracteres de otros
+		idiomas-->
+	<meta charset="UTF-8">
 
+	<!--Esta etiqueta sobra ya que no es un estándar y es para dar soporte
+		a Internet Explorer-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!--El atributo viewport es muy importante para el responsive ya que
+		indica la escala a la que s mostrará el contenido de la web-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--El título está enfocado hacia el SEO y debe estar entre los 55-60
+		caracteres-->
+	<title>Document</title>
+
+	<!--Esta etiqueta también va enfocada hacia el SEO y no debe rebasar
+		los 165 caracteres.-->
+	<meta name="description" content="Descripcion del sitio">
+
+</head>
+
+		<!--Todo los relacionado con el aspecto visual de la web va dentro de
+		la etiqueta body -->
 <body>
-    
+	<h2>Aprendiendo HTML</h2>
+	<!--Esta etiqueta representa un párrafo-->
+	<p>Hola, escribiendo mi primer documento HTML</p>
+	<p>Aprendiendo sobre Diseño Web</p>
+	<hr>
+
+	<!--Es importante que solo haya un H1 por página, por cuestiones de
+			posicionamiento-->
+	<h2>Encabezados HTML</h2>
+	<h1>Encabezado nivel 1</h1>
+	<h2>Encabezado nivel 2</h2>
+	<h3>Encabezado nivel 3</h3>
+	<h4>Encabezado nivel 4</h4>
+	<h5>Encabezado nivel 5</h5>
+	<h6>Encabezado nivel 6</h6>
+	<hr>
+	
+	<!--Etiquetas básicas-->
+	<h2>Etiqutas de Texto Básicas</h2>
+	<p>Palabras en:
+		<b>Negrita</b>
+		<i>Italica</i>
+		<u>Subrayado</u>
+	</p>
+
+	<p>Formula:
+		e=mc<sup>2</sup>
+	</p>
+
+	<p>Formula:
+		H<sub>2</sub>O
+	</p>
+
+	<p>Marca texto:
+		<mark>Texto marcado</mark>
+	</p>
+
+	<p>Letras pequeñas:
+		<small>Letras pequeñas</small>
+	</p>
+	<hr>
+
+	<!--Etiquetas avanzadas-->
+	<h2>Etiqutas de Texto Semánticas</h2>
+	<p>Texto importante:
+		<strong>Este texto es importante</strong>
+	</p>
+
+	<p>Texto con énfasis
+		<em>Este texto hace énfasis</em>
+	</p>
+
+	<p>Citas de autores:
+		<blockquote>Sólo se que no se nada</blockquote>
+		<cite>Sócrates</cite>
+	</p>
+	<hr> <!--Hace un separador. Tiene significado semántico-->
+	
+	<h2>Etiquetas de saltos</h2>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate, 
+		odio sequi quisquam sed nemo veritatis quasi architecto ea!
+		<br> <!--La etiqueta br sirve para hacer saltos de línea-->
+		Vel deleniti reiciendis distinctio totam suscipit natus blanditiis voluptatem voluptates unde?</p>
+	<hr>
+
+
+	<!--Etiquetas de Formateo-->
+	<h2>Etiquetas de Formateo</h2>
+	<p> Texto con formato respetado:
+		<!--La etiqueta pre, hace que se guarde el formato en el que está escrito el texto-->
+		<pre>
+			Tareas por hacer
+			- HTML
+			- Curso CSS
+			- Creo que ya
+		</pre>
+	</p>
+
+	<p>Formato código:
+		<code>Esto es un código de programación</code>
+	</p>
+	<hr>
+
+
 </body>
 </html>
 <!--  

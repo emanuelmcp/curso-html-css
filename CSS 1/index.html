@@ -5,11 +5,102 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso de CSS</title>
+  <!-- Sirve para llamar la hoja de estilos en cascada -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Curso de CSS</h1>
-  <p>
-    <i>Cascading Style Sheets</i> - Hojas de Estilo en Cascada
-  </p>
+  <article>
+    <h1 id="temario-css">Curso de CSS</h1>
+    <p>
+      <i>Cascading Style Sheets</i> - Hojas de Estilo en Cascada
+    </p>
+    <h2>Temario del Curso</h2>
+    <ul>
+      <li><a href="index.html#selectores-basicos">Selectores básicos</a></li>
+      <li><a href="index.html#selectores-avanzados"></a>Selectores avanzados</li>
+    </ul>
+  </article>
+
+  <article id="selectores-basicos">
+
+    <h2>Selectores basicos</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tempore 
+      illum animi quam, modi accusamus, officiis atque ullam nihil quidem quibusdam 
+      sequi suscipit ab earum voluptas possimus iste aliquid eveniet!</p>
+
+    <p id="parrafo-dos">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, 
+      corrupti expedita excepturi itaque praesentium ipsum nulla. Pariatur nesciunt 
+      dolorum accusantium, eum tenetur ad itaque rerum sunt dignissimos laborum illo excepturi.</p>
+
+    <p class="texto-32 bg-skyblue">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sed, repellat 
+      sapiente similique amet alias quisquam sit nulla quo laboriosam debitis ipsum 
+      fugit tenetur est saepe ratione fugiat laudantium natus!</p>
+
+    <p class="texto-20 bg-steelblue text-white">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius deserunt ad rem 
+      in ab, facilis nihil voluptatum voluptas dolores ipsam ullam fugiat quisquam repellendus 
+      libero atque neque saepe, quidem culpa.</p>
+    <a href="index.html#temario-css">☝️</a>
+  
+  </article>
+
+  <hr>
+
+  <article id="selectores-avanzados">
+    <h2>Selectores avanzados</h2>
+    <h3>Selectores de hijos</h3>
+
+    <h4>Selector de hijos directos</h4>
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hijos descendientes</h4>
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de hermanos</h3>
+
+    <h4>Selector de hermanos (todos los hermanos)</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hermnoas adyacentes (aplica a los hermanos directos)</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacentes"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de Atributos</h3>
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+        <li><a href="https://jonmircha.com/cursos" class="menu-item cursos button" target="_blank">Cursos</a></li>
+        <li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
+        <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+        <li><a href="https://jonmircha.com/ahora" class="menu item notas button" target="_blank">Ahora</a></li>
+        <li><a href="http://jonmircha.com/notas" class="menu-item notas button" target="_blank">Notas</a></li>
+        <li><a href="index.html#temario-css">Regresar al temario</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html#temario-css">☝️</a>
+  </article>
 </body>
 </html>
